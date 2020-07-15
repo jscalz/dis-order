@@ -71,7 +71,7 @@ The imagery displayed here is of the Mandelbrot equation, chosen as the projectâ
      <div id="playimg">
        
      <img src="https://live.staticflickr.com/65535/50083620813_317c5bd146_o.png" style="width:75%" alt="Image of Mandelbrot">
-     <button class="launch" a href="https://jscalz.github.io/dis-order-play">LAUNCH</a></button>
+      <a href="https://jscalz.github.io/dis-order-play" class="launch">LAUNCH</a>
    
   </div>
   </div>
@@ -304,6 +304,8 @@ body {
   height: auto;
 }
 
+ 
+ 
 #playimg .launch {
   position: absolute;
   top: 50%;
@@ -313,6 +315,7 @@ body {
   background-color: black;
   opacity: 70%;
   color: white;
+  text-decoration: none;
   font-size: 1.05em;
   font-weight: bold;
   font-family: 'Andale Mono', monospace;
@@ -327,8 +330,9 @@ body {
 
 #playimg .launch:hover {
   background-color: #5B017A;
+  text-decoration: none;
 }
-
+  
 
 #line4 {
   margin-top: 100px;
