@@ -63,15 +63,20 @@ The imagery displayed here is of the Mandelbrot equation, chosen as the projectâ
     <div id="line3"> 
    </div>
   
-  
-   
    
   <div id="play">
+    
     <div id="play-label"><h2>INTERACT</h2></div>
+    
      <div id="playimg">
-     <img src=https://live.staticflickr.com/31337/50115828872_fa583f6c7e_o.jpg" style="width:87%" id="playimg1" alt="Image of Mandelbrot">
-   </div>
+       
+     <img src="https://live.staticflickr.com/65535/50083620813_317c5bd146_o.png" style="width:87%" alt="Image of Mandelbrot">
+     <button class="launch" a href="https://jscalz.github.io/dis-order-play">LAUNCH</a></button>
+   
   </div>
+  </div>
+
+
   
    <div id="line4"> 
    </div>
@@ -135,7 +140,6 @@ The imagery displayed here is of the Mandelbrot equation, chosen as the projectâ
   </div> 
 
     
-
 
 </body>
 </html>
@@ -290,22 +294,40 @@ body {
 }
 
 #playimg {
-  display: inline-flex; 
-  top: 0%;  
+  position: relative;  
   width: 100%; 
-  height: 100%;
 }
 
-#playimg1 {
-  display: inline-flex; 
-  top: 0; 
-  left: 0; 
-  right: 0; 
-  bottom: 0; 
-  margin: auto; 
-  max-width: 75%;
-  max-height: 75%;
-  }
+#playimg img{
+  width: 100%;
+  height: auto;
+}
+
+#playimg .launch {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: black;
+  opacity: 70%;
+  color: white;
+  font-size: 1.05em;
+  font-weight: bold;
+  font-family: 'Andale Mono', monospace;
+  letter-spacing: 1px;
+  padding: 10px 35px;
+  border: solid 1px;
+  cursor: pointer;
+  border-radius: 15px;
+  border-color: #DEDEDE;
+  
+}
+
+#playimg .launch:hover {
+  background-color: #5B017A;
+}
+
 
 #line4 {
   margin-top: 100px;
@@ -486,13 +508,6 @@ body {
   color: #B0BDD5;
   font-size: 12px;
 }
-
-
-
-
-
-
-
 
 
 </style>
